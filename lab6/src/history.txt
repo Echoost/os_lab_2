@@ -1,0 +1,48 @@
+    1  cd lab5/src/
+    2  gcc mutex.c -o mutex -pthread
+    3  ./mutex
+    4  gcc mutex.c -o mutex_with_mutex -pthread
+    5  ./mutex_with_mutex 
+    6  history > history.txt
+    7  touch factorial.c
+    8  gcc factorial.c -o factorial
+    9  gcc factorial.c -o factorial -pthread
+   10  ./factorial -k 10 --pnum=4 --mod=10
+   11  ./factorial -k 10 --pnum=4 --mod=1000
+   12  history > history.txt 
+   13  touch deadlock.c
+   14  gcc deadlock.c -o deadlock -pthread
+   15  ./deadlock
+   16  rm deadlock factorial mutex mutex_with_mutex 
+   17  history > history.txt 
+   18  git add ..
+   19  git status
+   20  git commit -m "Lab5 done"
+   21  git push
+   22  cd ../../lab6
+   23  touch makefile
+   24  rm makefile 
+   25  cd src/
+   26  rm makefile 
+   27  touch makefile
+   28  make
+   29  touch servers.txt
+   30  touch s1.sh
+   31  touch s2.sh
+   32  touch c.sh
+   33  ./s1
+   34  s1
+   35  ./s1.sh
+   36  sh s1.sh
+   37  sh c.sh
+   38  sh s1.sh &
+   39  sh s2.sh &
+   40  sh c.sh
+   41  jobs
+   42  sh c.sh
+   43  kill 20465
+   44  kill 20427
+   45  ll
+   46  jobs
+   47  make clean
+   48  history > history.txt
